@@ -15,7 +15,6 @@ All P0 scores were freshly generated; quotation scores were not reused from repl
 ## Files
 
 - [Prompt templates](prompts/Prompt_Templates_English.md): all six reply/quotation templates.
-- [Summary table](results/Prompt_Sensitivity_of_Opposition_Scores.md): six comparisons with P0.
 - [Summary CSV](results/Prompt_Sensitivity_of_Opposition_Scores.csv): the same table in CSV format.
 - [Per-sample comparison](results/per_sample_comparison.csv): 300 rows containing the discussion topic, source/response texts, P0, P1, P2, and signed differences.
 - [Dimensional scores](results/dimensional_scores.csv): 900 rows with individual dimension scores and composite confidence C.
@@ -31,6 +30,15 @@ For quotations, C = [0.30*d + 0.30*l + 0.20*c + 0.10*(1-a)] / 0.90.
 d, l, c, t, and a correspond to direct_disagreement, logic_or_evidence_challenge, counter_claim, targeted_response, and agreement_or_neutral.
 
 ## Interpretation
+
+| Dataset | Relation | Comparison | N | MAE | Spearman rho | Mean Signed Difference |
+|---|---|---|---:|---:|---:|---:|
+| 4Forums | Reply | P1 vs P0 | 100 | 0.0752 | 0.9278 | -0.0096 |
+| 4Forums | Reply | P2 vs P0 | 100 | 0.0712 | 0.9151 | -0.0075 |
+| 4Forums | Quotation | P1 vs P0 | 100 | 0.0642 | 0.9370 | -0.0162 |
+| 4Forums | Quotation | P2 vs P0 | 100 | 0.0806 | 0.9315 | -0.0303 |
+| CreateDebate | Reply | P1 vs P0 | 100 | 0.0596 | 0.9398 | +0.0104 |
+| CreateDebate | Reply | P2 vs P0 | 100 | 0.0627 | 0.9203 | -0.0074 |
 
 MAE is the mean absolute difference from P0. Spearman rho is calculated from average ranks for tied values. Mean signed difference is alternative C minus P0 C. These are score-scale differences, not accuracy percentage points.
 
