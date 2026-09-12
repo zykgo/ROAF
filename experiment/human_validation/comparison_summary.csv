@@ -1,0 +1,5 @@
+scope,n,quadratic_weighted_cohens_kappa,kappa_95ci_lower,kappa_95ci_upper,exact_human_agreement,agreement_within_one_point,spearman_llm_vs_mean_human_score,spearman_95ci_lower,spearman_95ci_upper,permutation_p_value
+Overall,75,0.822,0.735,0.886,0.560,0.907,0.806,0.691,0.878,0.00001
+4Forums_reply,25,0.833,,,,,0.885,,,
+4Forums_quote,25,0.782,,,,,0.729,,,
+CreateDebate_reply,25,0.800,,,,,0.722,,,
