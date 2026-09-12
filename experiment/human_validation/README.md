@@ -4,14 +4,16 @@ This repository contains the sampled records and score-comparison results used t
 
 ## Contents
 
-- `sampled_annotation_comparison.csv`: 75 sampled directed interactions, with relation identifiers, sampling strata, LLM opposition scores, and independent 0--4 ratings from two human annotators.
+- `sampled_annotation_comparison.csv`: 75 sampled directed interactions, with relation identifiers, source/response texts, LLM opposition scores, and independent 0--4 ratings from two human annotators.
 - `comparison_summary.csv`: overall and relation-specific human agreement and LLM--human correspondence results.
 
 ## Sampling and scoring
 
 The sample includes 25 4Forums reply relations, 25 4Forums quotation relations, and 25 CreateDebate reply relations. Each group contains 8 lower-third, 9 middle-third, and 8 upper-third LLM-score records, randomly sampled within strata. These strata cover the score distribution; they are not human labels.
 
-Two annotators independently rated opposition intensity from 0 (no substantive challenge) to 4 (explicit and comprehensive rebuttal). The public files exclude forum text and machine translations; source records remain subject to the original dataset terms.
+Two annotators independently rated opposition intensity from 0 (no substantive challenge) to 4 (explicit and comprehensive rebuttal). The table includes source_text and response_text from the original sampling workbook, matched using dataset, relation type, topic, discussion ID, both post IDs, and the LLM score. For replies, source_text is the parent text; for quotations, it is the source/quoted content shown in that workbook. These are the archived sample texts, not a newly reconstructed or rescored input set. Machine translations are not included; source records remain subject to the original dataset terms.
+
+The prompt_version column has been omitted. All existing numerical scores and summary statistics remain unchanged.
 
 ## Main comparison
 

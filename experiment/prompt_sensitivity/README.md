@@ -17,10 +17,10 @@ All P0 scores were freshly generated; quotation scores were not reused from repl
 - [Prompt templates](prompts/Prompt_Templates_English.md): all six reply/quotation templates.
 - [Summary table](results/Prompt_Sensitivity_of_Opposition_Scores.md): six comparisons with P0.
 - [Summary CSV](results/Prompt_Sensitivity_of_Opposition_Scores.csv): the same table in CSV format.
-- [Per-sample comparison](results/per_sample_comparison.csv): 300 rows containing P0, P1, P2 and signed differences.
+- [Per-sample comparison](results/per_sample_comparison.csv): 300 rows containing the discussion topic, source/response texts, P0, P1, P2, and signed differences.
 - [Dimensional scores](results/dimensional_scores.csv): 900 rows with individual dimension scores and composite confidence C.
 
-Public sample IDs are anonymous within each dataset-relation group and link the two detailed tables. Forum texts, source identifiers, and free-text scoring reasons are omitted. The targeted_response field is blank for quotations because this dimension is not evaluated.
+Public sample IDs are anonymous within each dataset-relation group and link the two detailed tables. In the per-sample table, discussion_topic, source_text, and response_text are taken directly from the archived API requests and verified to be identical across P0, P1, and P2. source_text is parent_text for replies and quoted_text for quotations; response_text is reply_text or quoting_post_text. Texts retain the exact whitespace normalization and truncation used for scoring. Source identifiers and free-text scoring reasons are omitted. The targeted_response field is blank for quotations because this dimension is not evaluated.
 
 ## Score Calculation
 
