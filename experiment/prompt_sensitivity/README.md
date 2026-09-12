@@ -14,7 +14,7 @@ All P0 scores were freshly generated; quotation scores were not reused from repl
 
 ## Files
 
-- [Prompt templates](prompts/Prompt_Templates_English.md): all six reply/quotation templates.
+- [Prompt templates](prompts/Prompt_Templates.md): all six reply/quotation templates.
 - [Summary CSV](results/Prompt_Sensitivity_of_Opposition_Scores.csv): the same table in CSV format.
 - [Per-sample comparison](results/per_sample_comparison.csv): 300 rows containing the discussion topic, source/response texts, P0, P1, P2, and signed differences.
 - [Dimensional scores](results/dimensional_scores.csv): 900 rows with individual dimension scores and composite confidence C.
