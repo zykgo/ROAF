@@ -31,7 +31,7 @@ GLM agreed more closely with DeepSeek than Doubao did in all three groups. Ranki
 ## Files and Text Provenance
 
 - [per_sample_comparison.csv](per_sample_comparison.csv): 300 rows with public sample IDs, topic, discussion topic, exact scoring input text pairs, all three composite scores, and differences from DeepSeek.
-- [dimensional_scores.csv](dimensional_scores.csv): 900 rows with P0 profile, model, dimension scores, composite score, and the returned short scoring reason. Join to the text table by `sample_id`. Missing quotation response relevance is blank, not zero.
+- [dimensional_scores.csv](dimensional_scores.csv): 900 rows with P0 profile, model, dimension scores, composite score, and a short scoring reason. Join to the text table by `sample_id`. Missing quotation response relevance is blank, not zero.
 - [summary.csv](summary.csv): six comparisons with full-precision aggregate statistics.
 
 For replies, `source_text` is the parent post and `response_text` is the reply. For quotations, they are the quoted passage and the quoting post. These are the actual inputs after the original whitespace processing and truncation to 1,600 characters, with ` ...` appended when truncated; they are not necessarily the complete raw posts. IDs match the prompt-sensitivity release. Internal reasoning traces, credentials, and implementation code are not published. Source datasets remain subject to their respective terms.
